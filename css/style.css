@@ -1,0 +1,27 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  font-size: 1em;
+}
+ 
+div.repeat:nth-child(6n+1){
+	clear: both;
+}
+
+/* Portrait tablets and small desktops colsm*/
+@media (min-width:768px) and (max-width:991px) {
+div.repeat:nthchild(3n+1){ clear: both}
+}
+
+/* Landscape phones and portrait tablets colxs*/
+@media (max-width:767px) {
+	div.repeat:nthchild(2n+1){ clear: both}
+}
+/* Portrait phones and smaller colxs*/
+@media (maxwidth:480px) {
+	div.repeat:nthchild(2n+1) { 
+	clear: both}
+}
